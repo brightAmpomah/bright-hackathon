@@ -1,0 +1,55 @@
+.role-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 180px;
+    padding: 12px;
+    text-align: center;
+    transition: .2s ease-in-out;
+}
+.role-card:hover {
+    border: 2px solid #0d6efd;
+    cursor: pointer;
+}
+.selected{
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+
+.task-card{
+    transition: .3s ease-in-out;
+}
+.task-card:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.event-box{
+    background-color: #fff3cd;
+    padding: 1rem;
+    border-left: 5px solid #ffc107;
+}
+.score-box {
+    background-color: #e2f0d9;
+    padding: 1rem;
+    border-left: 5px solid #198754;
+}
+.energy-bar{
+    height: 20px;
+    border-radius: 4px;
+    background: linear-gradient(to right, #198754, #d4edda);
+}
+.badge-box{
+    background: #f0f8ff;
+    border-left: 5px solid #0d6efd;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+}
+.score-list li{
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+.award-img{
+    width: 80px;
+    height: 80px;
+}

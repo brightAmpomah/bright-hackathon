@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>hackathon | results</title>
+</head>
+<body class="bg-light p-4">
+    <div class="container text-center">
+        <h2 class="mb-4">Hackathon Results</h2>
+
+        <div class="card shadow p-4">
+            <h4 class="mb-3">Your Team's Performance Summary</h4>
+            <ul class="list-unstyled score-list text-start mx-auto" style="max-width: 400px;">
+                <li>Innovation: <span id="scoreInnovation">0</span></li>
+                <li>Technical: <span id="scoreTechnical">0</span></li>
+                <li>UI/UX: <span id="scoreDesign">0</span></li>
+                <li>Collaboration: <span id="scoreCollab">0</span></li>
+                <li>Pitch: <span id="scorePitch">0</span></li>
+            </ul>
+            <div class="badge-box mt-4">
+                <h5>Awarded Badge:</h5>
+                <img src="" alt="Award Badge" id="awardImage" class="award-img my-2">
+                <p id="awardeText" class="fw-bold text-primary"></p>
+            </div>
+            <div class="mt-4">
+                <a href="setup.html" class="btn btn-outline-primary" onclick="localStorage.removeItem('finalScore')">Restart Game</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="result.js"></script>
+</body>
+</html>
