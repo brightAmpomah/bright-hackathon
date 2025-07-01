@@ -48,19 +48,25 @@
                     <p>Collaboration: <span id="scoreCollab">0</span></p>
                     <p>Pitch: <span id="scorePitch">0</span></p>
                 </div>
+
+                <div class="text-start mt-4">
+                    <button class="btn btn-success" onclick="nextPhase()">Next Phase</button>
+                </div>
             </div> 
+            
         </div>
 
-        <div class="text-start">
-            <button class="btn btn-success" onclick="nextPhase()">Next Phase</button>
-        </div>
+        
+        <audio id="bgMusic" loop autoplay hidden>
+            <source src="/it-makes-you-forget-chill-electronica-283958.mp3" type="audio/mpeg">
+        </audio>
     </div>
 
     <div class="modal fade" id="submitModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Submit GitHub Link</h5>
+                    <h5 class="modal-title" id="submitModalLabel">Submit GitHub Link</h5>
                     <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
@@ -74,6 +80,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
 
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999;">
